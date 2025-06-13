@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Café - Combustible para desarrolladores</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/animations.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">
+                    <img src="/IMAGENES/logocafeteria.png" alt="Programming Café" class="logo-img">
+                    <span class="logo-text">Programming<span>Café</span></span>
+                </a>
+                
+                <div class="menu-toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="#hero" class="nav-link">Inicio</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Nuestros Cafés</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a href="#products" class="nav-link">Nuestro Menu</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li class="nav-item"><a href="carrito.html" class="nav-link btn btn-outline">MI CARRITO</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="heros" id="hero">
+            <video id="video" src="/HTML/CAFEFONDO.mp4" autoplay loop></video>
+            <div class="hero-content">
+                <h1 class="hero-title animate-fadeInUp" id="hero-title1" style="color: white;" style="color: white;">El combustible perfecto para tus líneas de código</h1>
+                <p class="hero-subtitle animate-fadeInUp delay-1">Café especial para desarrolladores que exigen calidad</p>
+                <a href="#products" class="btn btn-primary animate-fadeInUp delay-2">Explorar cafés</a>
+            </div>
+            <div class="hero-bg"></div>
+            <div class="code-snippet animate-fadeIn">
+                <pre><code class="language-javascript">// Nuestro café es como un buen código
+const perfectCoffee = beans => {
+  return beans
+    .filter(bean => bean.quality > 95)
+    .roast('medium')
+    .brew({
+      method: 'pourOver',
+      time: '4m',
+      temperature: 92
+    });
+};</code></pre>
+            </div>
+        </section>
+
+        <section id="products" class="section_products">
+            <div class="Products-container">
+                <h2 class="section-title">Nuestros <span>Cafés</span> Dev</h2>
+                <p class="section-subtitle">Seleccionados para mantener tu código limpio y tu mente despierta</p>
+                <div class="ContainerProducts">
+                <!-- PRODUCTOS PARA EL CARRITO -->    
+                <div class="productos" id="Producto1">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/HELLO WORLD.jpg " alt="Hello WORLD">
+                    <h3>CAFE "HELLO WORLD"</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b>El clásico café negro para empezar tu día de código <br>
+                    <b>Preparación:</b> Espresso simple servido en taza pequeña con mensaje "Hello World!" escrito en cocoa</p>
+                </div> 
+                <div class="productos" id="Producto2">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/CHIP LATTE.jpg" alt="CHIP LATTE">
+                    <h3>"JAVA" CHIP LATTE</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Para los que aman el lenguaje Java (y el café) <br>
+                    <b> Preparación: </b>Latte con shot extra de espresso, sirope de chocolate y trozos de galleta, decorado con símbolos de código Java</p>
+                </div> 
+                <div class="productos" id="Producto3">
+                   <img  class="IMAGEN_PRODUCTO" src="/IMAGENES/NULL.jpg" alt="NULL POINTER">
+                    <h3>"NULL POINTER" MOCHA </h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Chocolate intenso que nunca devolverá null <br>
+                    <b>Preparación:</b> Mocha con chocolate oscuro, leche vaporizada y una pizca de canela, servido con marshmallow flotando como "puntero"</p>
+                </div> 
+                <div class="productos" id="Producto4">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/404.jpg" alt="404 Sugar Not Found">
+                    <h3>"404 Sugar Not Found" Té Negro</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b>Para puristas que prefieren su bebida sin azúcar <br>
+                   <b>Preparación:</b> Té negro de alta calidad servido sin endulzantes, con etiqueta de error "404 Sugar Not Found"</p>
+                </div> 
+                <div class="productos" id="Producto5">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/BINARY.jpg" alt="BINARY">
+                    <h3>"BINARY" CAPUCCINO </h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Café equilibrado como unos y ceros perfectos <br>
+                    <b>Preparación:</b> Cappuccino tradicional con espuma decorada con código binario (1-0-1-0)</p>
+                    
+                </div> 
+                <div class="productos" id="Producto6">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/INIFINITE.jpg" alt="Infinite Loop">
+                    <h3>"Infinite Loop" Frappé</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Bebida refrescante que querrás pedir una y otra vez <br>
+                    <b>Preparación:</b> Frappé con leche y chocolate, decorado con código infinito (for)</p>
+                     
+                </div> 
+                 <div class="productos" id="Producto7">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/OVERFLOW.jpg" alt="Stack Overflow">
+                    <h3>"Stack Overflow" Chai Latte</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Mezcla de especias que satisface todas tus dudas <br>
+                        <b>Preparación:</b> Chai latte especiado servido en taza apilable (como una pila de llamadas), decorado con clavos de olor y canela</p>
+                    
+                </div> 
+                 <div class="productos" id="Producto8">
+                   <img class="IMAGEN_PRODUCTO" src="/IMAGENES/GIT PUSH.jpg " alt="Git Push">
+                    <h3>"Git Push" Energético</h3>
+                    <a href="carrito.html"></a>
+                    <p class="descripcion"><b>Descripción:</b> Bebida energética para esas largas sesiones de codificación <br>
+                        <b>Preparación:</b> Energético con té matcha, jugo de naranja y jengibre, servido con etiqueta de commit "git push origin master"</p>
+                     
+                </div> 
+                 <div class="productos" id="Producto9">
+                   <img  class="IMAGEN_PRODUCTO" src="/IMAGENES/BUG.jpg" alt="Bug Fix" >
+                    <h3>"Bug Fix" Cookie Shake</h3>
+                    <p class="descripcion"><b>Descripción:</b> Batido dulce que solucionará tu día <br>
+                     <b>Preparación:</b> Batido de vainilla con trozos de galleta, crema batida y salsa de caramelo, servido con una galleta extra "para debugging"</p>
+                </div> 
+            </div>       
+        </section>
+
+        <!-- CARRUSEL -->
+        <section id="carruseles" class="section galeria">
+
+                   <div class="carrusel">
+                     <div  class="slider"  style="--width: 900px;--height: 400px;--quantity: 3;margin:0 0">
+                     <div class="list">
+                    <div class="item" style="--position: 1">
+                     <div
+                     class="card"
+                    style="background: none" >
+                      <a href="fresitas.html"><img src="/IMAGENES/CAFE2.jpg" alt="slide1"></a>
+                     </div>
+                     </div>
+                    <div class="item" style="--position: 2">
+                     <div
+                     class="card"
+                      style="background: none">
+                     <a href="fresitas.html"><img src="/IMAGENES/CAFE3.jpg" alt="slide2"></a>
+                      </div>
+                     </div>
+                    <div class="item" style="--position: 3">
+                     <div
+                          class="card"
+                         style="background: none">
+                          <a href="fresitas.html"><img src="/IMAGENES/1CAFE.jpg" alt="slide3"></a>
+                         </div>
+                          </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+    <section id="estadisticas" class="section_graficas">
+        <div class="Graficas">
+            <h2 style="text-align: center;" >Graficas Estadísticas Venta de cafe </h2>
+            <div id="estadistica"><h3>Relación Precio unitario y Compra</h3>
+                <img class="Estadis" src="/IMAGENES/relacion precio.png" alt="Relación Precio y Compra">
+            </div>
+            <div id="estadistica"><h3>Total Vendido Por Hora Del Dia</h3>
+                <img class="Estadis" src="/IMAGENES/venta hora.png" alt="Venta hora">
+            </div>
+            <div id="estadistica"><h3>Total Vendido Por Mes</h3>
+                <img class="Estadis" src="/IMAGENES/vendido mes.png" alt="Venta mes">
+            </div>
+        </div>
+    </section>
+
+        <section id="about" class="section about">
+            <div class="container">
+                <div class="about-content">
+                    <h2 class="section-title">Código <span>&</span> Café</h2>
+                    <p class="section-subtitle">Nuestra historia</p>
+                    <p>Fundado por desarrolladores para desarrolladores, Programming Café nació de la necesidad de tener un espacio donde el café de calidad y la tecnología se unen. Cada grano es seleccionado con el mismo cuidado que ponemos en nuestro código.</p>
+                    <p>Nuestros baristas son entrenados para entender las necesidades de los programadores, ofreciendo bebidas que mantienen el balance perfecto entre energía y concentración.</p>
+                    <div class="stats">
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="10">0</span>
+                            <span class="stat-label">Kilos de café al mes</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="24">0</span>
+                            <span class="stat-label">Horas abiertos</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number" data-count="500 ">0</span>
+                            <span class="stat-label">% de bugs resueltos</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-img">
+                    <img src="/IMAGENES/logocafeteria.png" alt="Sobre Programming Café" class="animate-zoomIn">
+                </div>
+            </div>
+        </section>               
+
+        <section id="contact" class="section contact">
+            <div class="container">
+                <div class="contact-form">
+                    <h2 class="section-title">¿Preguntas? <span>Escríbenos</span></h2>
+                    <form>
+                        <div class="form-group">
+                            <input type="text" placeholder="Nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+                    </form>
+                </div>
+                <div class="contact-info">
+                    <h3>Contacto</h3>
+                    <p><strong>Email:</strong> hola@programmingcafe.com</p>
+                    <p><strong>Teléfono:</strong> +57 123 456 7890</p>
+                    <p><strong>Horario:</strong> Soporte 24/7 (como debe ser)</p>
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">GitHub</a>
+                        <a href="#" class="social-link">Twitter</a>
+                        <a href="#" class="social-link">StackOverflow</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#" class="logo">
+                        <img src="/IMAGENES/logocafeteria.png" alt="Programming Café" class="logo-img">
+                        <span class="logo-text">Programming<span>Café</span></span>
+                    </a>
+                    <p>El combustible que tu código necesita</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#products">Productos</a></li>
+                        <li><a href="#about">Nosotros</a></li>
+                        <li><a href="nuestromenu.index">Nuestro menu</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-legal">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Términos y condiciones</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Programming Café. Todos los derechos reservados. Hecho con ❤️ y ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/carrito.js"></script>
+</body>
+</html>
